@@ -21,13 +21,13 @@ _Gryphon Strother_  -  _12/01/2021_
 - **Demonstrated below:**
 
 ><?php
-// Declaring variables
+/ Declaring variables
 $words = "Hello";
 $numbers = 22;
 ?> 
 
 ><?php
-// Displaying variables value
+/ Displaying variables value
 echo words;  // Output: Hello
 echo $numbers; // Output: 22
 ?>
@@ -39,12 +39,12 @@ echo $numbers; // Output: 22
 - **Defined using the following function:**
 
 ><?php
-// Defining constant
+/ Defining constant
 define("SITE_URL", "https://www.twitch.tv/grryph");
 ?>
 
 ><?php
-// Using constant
+/ Using constant
 echo 'Watch me at - ' . SITE_URL;
 ?>
 
@@ -55,14 +55,14 @@ echo 'Watch me at - ' . SITE_URL;
 **Here is how text is rendered with echo:**
 
 ><?php
-// Displaying string of text
+/ Displaying string of text
 echo "Hello";
 ?>
 
 **Here is how HTML is rendered with echo:**
 
 ><?php
-// Displaying HTML code
+/ Displaying HTML code
 echo "<h4>This is a small header.</h4>";
 echo "<h4 style='color: yellow;'>This is yellow header.</h4>";
 ?>
@@ -70,14 +70,14 @@ echo "<h4 style='color: yellow;'>This is yellow header.</h4>";
 **Here is how variables are rendered with echo:**
 
 ><?php
-// Defining variables
+/ Defining variables
 $message = "Hello";
 $phone = 2505056781;
 $favcolor = array("BLue", "Yellow", "Purple");
 ?>
 
 ><?php
-// Displaying variables
+/ Displaying variables
 echo $message;
 echo "<br>";
 echo $phone;
@@ -90,14 +90,14 @@ echo $favcolor[2];
 **Here is how text is rendered with print:**
 
 ><?php
-// Displaying string of text
+/ Displaying string of text
 print "Hello";
 ?>
 
 **Here is how HTML is rendered with print:**
 
 ><?php
-// Displaying HTML code
+/ Displaying HTML code
 print "<h4>This is a small header</h4>";
 print "<h4 style='color: yellow;'>This is a yellow header.</h4>";
 ?>
@@ -105,14 +105,14 @@ print "<h4 style='color: yellow;'>This is a yellow header.</h4>";
 **Here is how variables are rendered with print:**
 
 ><?php
-// Defining variables
+/ Defining variables
 $message = "Hello";
 $phone = 2505056781;
 $favcolor = array("Blue", "Yellow", "Purple");
 ?>
 
 ><?php
-// Displaying variables
+/ Displaying variables
 print $message;
 print "<br>";
 print $phone;
@@ -144,25 +144,25 @@ There are **eight** different data types:
 - **Examples:**
 
 ><?php
-$a = 505; // positive decimal number
+$a = 505; / positive decimal number
 var_dump($a);
 echo "<br>";
 ?>
 
 ><?php
-$b = -505; // a negative decimal number
+$b = -505; / a negative decimal number
 var_dump($b);
 echo "<br>";
 ?>
 
 ><?php
-$c = 0x2A; // hexadecimal number
+$c = 0x2A; / hexadecimal number
 var_dump($c);
 echo "<br>";
 ?>
  
 ><?php
-$d = 0505; // octal number
+$d = 0505; / octal number
 var_dump($d);
 ?>
 
@@ -174,12 +174,12 @@ var_dump($d);
 - **Example:**
 
 ><?php
-// double quotes work
+/ double quotes work
 $a = "Best string ever!";
 ?>
 
 ><?php
-// but so do single quotes!
+/ but so do single quotes!
 $b = 'Still a great string!';
 ?>
 
@@ -209,9 +209,9 @@ var_dump($c);
 - True
 - False
 - **Example:**
-- 
->><?php
-// Assign the value of FALSE to a variable
+
+><?php
+/ Assign the value of FALSE to a variable
 $show_error = false;
 var_dump($show_error);
 ?>
@@ -243,12 +243,12 @@ var_dump($color_codes);
 - **Example:**
 
 ><?php
-// Class definition
+/ Class definition
 class greeting{
-    // properties
+    / properties
     public $str = "Hello";
     
->    // methods
+>    / methods
     function show_greeting(){
         return $this->str;
     }
@@ -256,7 +256,7 @@ class greeting{
 ?>
 
 <?php
-// Create object from class
+/ Create object from class
 $message = new greeting;
 var_dump($message);
 ?>
@@ -286,14 +286,14 @@ A special variable that references to an external resource, typicallly holds spe
 **Example:**
 
 ><?php
-// Open a file for reading
+/ Open a file for reading
 $handle = fopen("note.txt", "r");
 var_dump($handle);
 echo "<br>";
 ?>
 
 ><?php
-// Connect to MySQL database server with default setting
+/ Connect to MySQL database server with default setting
 $link = mysql_connect("localhost", "root", "");
 var_dump($link);
 ?>
@@ -397,7 +397,7 @@ PHP has many **built-in functions** that can be called directly within scripts.
 **Example"**
 
 > function functionName(){
-    // Code to be executed
+    / Code to be executed
 }
 
 ...can be used to create a function.
@@ -405,7 +405,7 @@ Parameters can also be used **like so:**
 
 
 > function myFunc($oneParameter, $anotherParameter){
-    // Code to be executed
+    / Code to be executed
 }
 
 **For each parameter, an argument must be passed to the function.**
@@ -434,7 +434,7 @@ There are **three kinds of arrays:**
 **An indexed or numeric array stores each array element with a numeric index.**
 
 ><?php
-// Define an indexed array
+/ Define an indexed array
 $colors = array("Red", "Green", "Blue");
 ?>
 
@@ -451,7 +451,7 @@ $colors[2] = "Blue";
 **In an associative array, the keys assigned to values can be arbitrary and user defined strings.**
 
 ><?php
-// Define an associative array
+/ Define an associative array
 $ages = array("Peter"=>22, "Clark"=>32, "John"=>28);
 ?>
 
@@ -468,7 +468,7 @@ $ages["John"] = "28";
 **The multidimensional array is an array in which each element can also be an array and each element in the sub-array can be an array and so on.**
 
 ><?php
-// Define a multidimensional array
+/ Define a multidimensional array
 $contacts = array(
     array(
         "name" => "Peter Parker",
@@ -483,7 +483,7 @@ $contacts = array(
         "email" => "harrypotter@mail.com",
     )
 );
-// Access nested value
+/ Access nested value
 echo "Peter Parker's Email-id is: " . $contacts[0]["email"];
 ?>
 
@@ -540,7 +540,7 @@ This loop is used to **iterate over arrays.**
 ><?php
 $colors = array("Red", "Green", "Blue");
  
->// Loop through colors array
+>/ Loop through colors array
 foreach($colors as $value){
     echo $value . "<br>";
 }
@@ -561,7 +561,7 @@ $superhero = array(
     "age" => 18
 );
  
->// Loop through superhero array
+>/ Loop through superhero array
 foreach($superhero as $key => $value){
     echo $key . " : " . $value . "<br>";
 }
