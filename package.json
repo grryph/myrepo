@@ -1,0 +1,29 @@
+{
+  "name": "nodeblogsoftwarev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect": "^3.7.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.2.2",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.2",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.1",
+    "express-sessions": "^1.0.6",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "startbootstrap-clean-blog": "^5.0.10"
+  }
+}
